@@ -105,3 +105,19 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
 }
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #45a049;
+}
