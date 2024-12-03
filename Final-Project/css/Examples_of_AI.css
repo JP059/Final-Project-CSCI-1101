@@ -22,25 +22,27 @@ header h1 {
     font-size: 3rem;
 }
 
-/* Navigation */
+/* navigation bar */
 nav {
-    background-color: #005bb5;
-    padding: 10px 0;
+    margin-top: 10px;
+}
+
+nav div {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px 15px;
-    margin: 0 20px;
-    display: inline-block;
+    font-size: 1rem;
+    padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #003d7a;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Main Section */
