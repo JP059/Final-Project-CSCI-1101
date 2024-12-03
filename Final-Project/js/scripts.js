@@ -15,3 +15,27 @@ function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
+
+$(function() {
+    $("#accordion").accordion();
+});
+//to diffrent codes 
+$( function() {
+  var state = true;
+  $( "#button" ).on( "click", function() {
+    if ( state ) {
+      $( "#effect" ).animate({
+        backgroundColor: "#aa0000",
+        color: "#fff",
+        width: 500
+      }, 1000 );
+    } else {
+      $( "#effect" ).animate({
+        backgroundColor: "#fff",
+        color: "#000",
+        width: 240
+      }, 1000 );
+    }
+    state = !state;
+  });
+} );

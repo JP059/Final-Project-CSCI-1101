@@ -3,38 +3,61 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Functions of AI</title>
-    <link rel="stylesheet" href="css/Functions_of_AI.css">
+ <link rel="stylesheet" href="css/Functions_of_AI.css">
+ <link rel="stylesheet" href="css/butten.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 </head>
 <body>
     <header>
         <h1>Functions of AI</h1>
         <nav>
-            <div><a href="index.html"> Home </a></div>
-            <div><a href="How_AI_Works.html"> How AI Works </a></div>
-            <div><a href="Examples_of_AI.html">Examples of AI</a></div>
-        <nav>
+            <div><a href="index.html">Home</a></div>
+            <div><a href="How_AI_Works.html">How AI Works</a></
+<div><a href="Examples_of_AI.html">Examples of AI</a></div>
+        </nav>
     </header>
+
     <main>
         <section id="introduction">
             <h2>Introduction</h2>
-            <p>Artificial Intelligence (AI) systems are designed to perform specific functions that enable machines to mimic human capabilities. These functions make AI an essential tool in today's world.</p>
+            <div class="toggler">
+                <div id="effect" class="ui-widget-content ui-corner-all">
+                    <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+                    <p>Artificial Intelligence (AI) systems are designed to perform specific functions that enable machines to mimic human capabilities. These functions make AI an essential tool in today's world.</p>
+                </div>
+            </div>
+            <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
         </section>
+
         <section id="functions">
             <h2>Key Functions of AI</h2>
-            <h3>1. Learning</h3>
-            <p>AI systems use various algorithms to analyze data and learn from it. This includes supervised, unsupervised, and reinforcement learning methods.</p>
+            <div id="accordion">
+                <h3>1. Learning</h3>
+                <div>
+                    <p>AI systems use various algorithms to analyze data and learn from it. This includes supervised, unsupervised, and reinforcement learning methods.</p>
+                </div>
 
-            <h3>2. Reasoning</h3>
-            <p>AI can make decisions based on logical reasoning and data. Examples include diagnosing diseases or solving complex problems in business and science.</p>
+                <h3>2. Reasoning</h3>
+                <div>
+                    <p>AI can make decisions based on logical reasoning and data. Examples include diagnosing diseases or solving complex problems in business and science.</p>
+                </div>
 
-            <h3>3. Perception</h3>
-            <p>Through sensors and processing tools, AI systems can perceive their environment. Applications include facial recognition, object detection, and speech processing.</p>
+                <h3>3. Perception</h3>
+                <div>
+                    <p>Through sensors and processing tools, AI systems can perceive their environment. Applications include facial recognition, object detection, and speech processing.</p>
+                </div>
 
-            <h3>4. Interaction</h3>
-            <p>AI systems can interact with humans through natural language processing (e.g., chatbots) or physical responses (e.g., robots).</p>
+                <h3>4. Interaction</h3>
+                <div>
+                    <p>AI systems can interact with humans through natural language processing (e.g., chatbots) or physical responses (e.g., robots).</p>
+                </div>
+            </div>
         </section>
+
         <section id="examples">
             <h2>Examples of AI Functions</h2>
             <ul>
@@ -45,10 +68,11 @@
             </ul>
         </section>
     </main>
+
     <footer>
         <p>CSCI 1101 Final Project</p>
     </footer>
-    <button id="scrollToTopBtn" onclick="scrollToTop()"> Back to Top </button>
+<button id="scrollToTopBtn" onclick="scrollToTop()"> Back to Top </button>
     <script src="js/scripts.js"></script>
 </body>
 </html>

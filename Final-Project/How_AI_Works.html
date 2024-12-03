@@ -1,49 +1,78 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How AI Works</title>
-    <link rel="stylesheet" href="css/How_AI_Works.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How AI Works</title>
+  <link rel="stylesheet" href="css/How_AI_Works.css"> 
+  <link rel="stylesheet" href="css/butten.css">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 </head>
 <body>
-    <header>
-        <h1>How AI Works </h1>
-        <nav>
-            <div><a href="index.html"> Home </a></div>
-            <div><a href="Functions_of_AI.html"> Functions of AI </a></div>
-            <div><a href="Examples_of_AI.html">Examples of AI</a></div>
-        </nav>
-        <main>
-        <section id="introduction">
-            <h2>What is AI?</h2>
-            <p>Artificial Intelligence (AI) is a branch of computer science that enables machines to perform tasks that typically require human intelligence, such as learning, reasoning, and problem-solving.</p>
-        </section>
-        <section id="how-it-works">
-            <h2>Understanding How AI Works</h2>
-            <h3>1. Data Collection</h3>
-            <p>AI systems start by collecting large amounts of data from various sources.</p>
-            <h3>2. Machine Learning</h3>
-            <p>Using algorithms, the system identifies patterns and learns from the data.</p>
-            <h3>3. Decision Making</h3>
-            <p>The trained model makes predictions or decisions based on input data.</p>
-            <h3>4. Feedback Loop</h3>
-            <p>The AI system improves itself by analyzing its performance and incorporating feedback.</p>
-        </section>
-        <section id="examples">
-            <h2>Real-World Examples of AI</h2>
-            <ul>
-                <li>Chatbots like ChatGPT</li>
-                <li>Recommendation systems (e.g., Netflix, Amazon)</li>
-                <li>Image recognition in social media</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>CSCI 1101 Final Project</p>
-    </footer>
-     <button id="scrollToTopBtn" onclick="scrollToTop()"> Back to Top </button>
-     <script src="js/scripts.js"></script>
+  <header>
+    <h1>How AI Works</h1>
+    <nav>
+      <div><a href="index.html">Home</a></div>
+      <div><a href="Functions_of_AI.html">Functions of AI</a></div>
+      <div><a href="Examples_of_AI.html">Examples of AI</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introduction">
+      <h2>What is AI?</h2>
+      <div class="toggler">
+        <div id="effect" class="ui-widget-content ui-corner-all">
+          <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+          <p>Artificial Intelligence (AI) is a branch of computer science that enables machines to perform tasks that typically require human intelligence, such as learning, reasoning, and problem-solving.</p>
+        </div>
+      </div>
+      <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+    </section>
+
+    <section id="how-it-works">
+      <h2>Understanding How AI Works</h2>
+      <div id="accordion">
+        <h3>1. Data Collection</h3>
+        <div>
+          <p>AI systems start by collecting large amounts of data from various sources.</p>
+        </div>
+
+        <h3>2. Machine Learning</h3>
+        <div>
+          <p>Using algorithms, the system identifies patterns and learns from the data.</p>
+        </div>      
+
+        <h3>3. Decision Making</h3>
+        <div>
+          <p>The trained model makes predictions or decisions based on input data.</p>
+        </div>
+
+        <h3>4. Feedback Loop</h3>
+        <div>
+          <p>The AI system improves itself by analyzing its performance and incorporating feedback.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="examples">
+      <h2>Real-World Examples of AI</h2>
+      <ul>
+        <li>Chatbots like ChatGPT</li>
+        <li>Recommendation systems (e.g., Netflix, Amazon)</li>
+        <li>Image recognition in social media</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>CSCI 1101 Final Project</p>
+  </footer>
+
+  <button id="scrollToTopBtn" onclick="scrollToTop()">Back to Top</button>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

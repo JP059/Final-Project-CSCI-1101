@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examples of AI</title>
     <link rel="stylesheet" href="css/Examples_of_AI.css">
+    <!-- Include jQuery and jQuery UI CSS for Accordion -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
     <header>
@@ -24,90 +28,90 @@
         
         <section id="examples">
             <h2>AI in Real-World Scenarios</h2>
-            <ul>
-                <li>
-                    <h3>1. Healthcare - AI in Diagnostics</h3>
-                    <p>
-AI systems are playing an increasingly significant role in healthcare by enhancing the diagnostic process. 
-Tools like IBM Watson use natural language processing and machine learning to analyze large datasets, including medical literature, clinical trials, and patient records. 
-These systems help doctors identify diseases more accurately and quickly. 
-For instance, Watson Health has been used to assist oncologists in diagnosing cancer by analyzing medical images and suggesting potential treatment options based on patient data. 
-Additionally, AI applications like DeepMind's algorithms are used for early detection of diseases such as diabetic retinopathy and age-related macular degeneration by analyzing medical images with high precision. 
-By leveraging vast medical databases, AI can improve decision-making, reduce diagnostic errors, and ultimately lead to better patient outcomes. 
-However, while AI shows immense potential, challenges related to data privacy, ethics, and integration into existing healthcare systems still need to be addressed.
+            <!-- Initialize the Accordion -->
+            <div id="accordion">
+                <h3>1. Healthcare - AI in Diagnostics</h3>
+                <div>
+                    <p>AI systems are playing an increasingly significant role in healthcare by enhancing the diagnostic process. 
+                    Tools like IBM Watson use natural language processing and machine learning to analyze large datasets, including medical literature, clinical trials, and patient records. 
+                    These systems help doctors identify diseases more accurately and quickly. 
+                    For instance, Watson Health has been used to assist oncologists in diagnosing cancer by analyzing medical images and suggesting potential treatment options based on patient data. 
+                    Additionally, AI applications like DeepMind's algorithms are used for early detection of diseases such as diabetic retinopathy and age-related macular degeneration by analyzing medical images with high precision. 
+                    By leveraging vast medical databases, AI can improve decision-making, reduce diagnostic errors, and ultimately lead to better patient outcomes. 
+                    However, while AI shows immense potential, challenges related to data privacy, ethics, and integration into existing healthcare systems still need to be addressed.
                     </p>
                     <p class="sources">
-    Sources:<br>
-    <a href="https://www.ibm.com/watson-health" target="_blank">"IBM Watson Health." IBM Watson Health, IBM Watson Health.</a><br>
-    <a href="https://deepmind.google/" target="_blank">"DeepMind AI" DeepMind, DeepMind Article.</a>
+                        Sources:<br>
+                        <a href="https://www.ibm.com/watson-health" target="_blank">"IBM Watson Health." IBM Watson Health, IBM Watson Health.</a><br>
+                        <a href="https://deepmind.google/" target="_blank">"DeepMind AI" DeepMind, DeepMind Article.</a>
                     </p>
-                </li>
-                <li>
-                    <h3>2. Transportation - Self-Driving Cars</h3>
-                    <p>
-AI is revolutionizing the transportation industry, particularly through the development of self-driving cars. 
-These vehicles use advanced algorithms, machine learning, and computer vision to navigate roads, make real-time decisions, and enhance safety. 
-Companies like Tesla and Waymo are at the forefront of autonomous vehicle technology. 
-Tesla's Autopilot system utilizes AI to assist with driving tasks, such as lane-keeping, adaptive cruise control, and parking. 
-Waymo, a subsidiary of Alphabet (Google's parent company), has also made significant advancements in self-driving technology, with its autonomous vehicles operating in select cities. 
-These AI-powered cars have the potential to reduce accidents caused by human error, optimize traffic flow, and improve fuel efficiency. 
-While challenges remain, including regulatory hurdles and public acceptance, the future of self-driving cars looks promising in shaping the future of transportation.
-                    </p>
-                    <p class="sources">
-                    Sources:<br>
-    <a href="https://www.tesla.com/autopilot" target="_blank">"Tesla Autopilot." Tesla.</a><br>
-    <a href="https://waymo.com" target="_blank">"Waymo: Self-Driving Technology." Waymo.</a>
-                    </p>
-                </li>
-                <li>
-                    <h3>3. Customer Service - AI Chatbots</h3>
-                    <p>
-AI chatbots are increasingly being adopted by businesses to enhance customer service. 
-These intelligent systems use natural language processing (NLP) and machine learning to understand and respond to customer inquiries. 
-Chatbots can handle a range of tasks, from providing quick answers to frequently asked questions to managing more complex issues, making them a valuable tool for customer support. 
-They are available 24/7, ensuring that customers receive assistance at any time of day. 
-Major companies like IBM and LivePerson have developed advanced AI-powered chatbots that improve user experience, reduce wait times, and free up human agents to handle more complicated cases. 
-As the technology continues to evolve, AI chatbots are becoming an integral part of modern customer service strategies.
+                </div>
+
+                <h3>2. Transportation - Self-Driving Cars</h3>
+                <div>
+                    <p>AI is revolutionizing the transportation industry, particularly through the development of self-driving cars. 
+                    These vehicles use advanced algorithms, machine learning, and computer vision to navigate roads, make real-time decisions, and enhance safety. 
+                    Companies like Tesla and Waymo are at the forefront of autonomous vehicle technology. 
+                    Tesla's Autopilot system utilizes AI to assist with driving tasks, such as lane-keeping, adaptive cruise control, and parking. 
+                    Waymo, a subsidiary of Alphabet (Google's parent company), has also made significant advancements in self-driving technology, with its autonomous vehicles operating in select cities. 
+                    These AI-powered cars have the potential to reduce accidents caused by human error, optimize traffic flow, and improve fuel efficiency. 
+                    While challenges remain, including regulatory hurdles and public acceptance, the future of self-driving cars looks promising in shaping the future of transportation.
                     </p>
                     <p class="sources">
-                    Sources:<br>
-<a href="https://www.ibm.com/products/watsonx-assistant?lnk=flatitem" target="_blank">"IBM Watson Assistant." IBM.</a><br>
-<a href="https://www.liveperson.com" target="_blank">"AI Chatbots for Customer Service." LivePerson.</a>
+                        Sources:<br>
+                        <a href="https://www.tesla.com/autopilot" target="_blank">"Tesla Autopilot." Tesla.</a><br>
+                        <a href="https://waymo.com" target="_blank">"Waymo: Self-Driving Technology." Waymo.</a>
                     </p>
-                </li>
-                <li>
-                    <h3>4. Finance - AI in Fraud Detection</h3>
-                    <p>
-AI is transforming the finance industry, particularly in the area of fraud detection. 
-By analyzing large volumes of transaction data in real time, AI systems can identify suspicious patterns and flag potential fraudulent activity. 
-These systems use machine learning algorithms to recognize anomalies, such as unusual spending behaviors or unauthorized transactions. 
-As a result, AI can help financial institutions respond quickly to fraudulent actions, minimizing losses and enhancing security. 
-Companies like Mastercard and Visa are utilizing AI-driven tools to monitor transactions and prevent fraud. 
-The ability of AI to learn from past data and adapt to new threats makes it an essential tool in safeguarding financial systems.
-                    </p>
-                    <p class="sources">
-                    Sources:<br>
-<a href="https://www.mastercard.com" target="_blank">"Mastercard: AI and Fraud Prevention." Mastercard.</a><br>
-<a href="https://www.visa.com" target="_blank">"Visa's AI-Powered Fraud Detection." Visa.</a>
-                    </p>
-                </li>
-                <li>
-                    <h3>5. Entertainment - AI in Content Recommendations</h3>
-                    <p>
-AI plays a key role in the entertainment industry, particularly through personalized content recommendations on platforms like Netflix and Spotify. 
-By analyzing user preferences, viewing history, and behavior, AI algorithms can suggest movies, TV shows, and music that align with an individual's tastes. 
-These recommendation systems learn and adapt over time, continuously improving their suggestions. 
-For example, Netflix's AI-driven algorithm uses data such as watching patterns, ratings, and search history to provide tailored recommendations to its users. 
-Similarly, Spotify's AI analyzes listening habits to curate personalized playlists and music suggestions. 
-This personalization enhances user experience and keeps audiences engaged with the platform.
+                </div>
+
+                <h3>3. Customer Service - AI Chatbots</h3>
+                <div>
+                    <p>AI chatbots are increasingly being adopted by businesses to enhance customer service. 
+                    These intelligent systems use natural language processing (NLP) and machine learning to understand and respond to customer inquiries. 
+                    Chatbots can handle a range of tasks, from providing quick answers to frequently asked questions to managing more complex issues, making them a valuable tool for customer support. 
+                    They are available 24/7, ensuring that customers receive assistance at any time of day. 
+                    Major companies like IBM and LivePerson have developed advanced AI-powered chatbots that improve user experience, reduce wait times, and free up human agents to handle more complicated cases. 
+                    As the technology continues to evolve, AI chatbots are becoming an integral part of modern customer service strategies.
                     </p>
                     <p class="sources">
-                    Sources:<br>
-<a href="https://www.netflix.com" target="_blank">"Netflix Recommendation System." Netflix.</a><br>
-<a href="https://www.spotify.com" target="_blank">"Spotify Personalization and Recommendations." Spotify.</a>
+                        Sources:<br>
+                        <a href="https://www.ibm.com/products/watsonx-assistant?lnk=flatitem" target="_blank">"IBM Watson Assistant." IBM.</a><br>
+                        <a href="https://www.liveperson.com" target="_blank">"AI Chatbots for Customer Service." LivePerson.</a>
                     </p>
-                </li>
-            </ul>
+                </div>
+
+                <h3>4. Finance - AI in Fraud Detection</h3>
+                <div>
+                    <p>AI is transforming the finance industry, particularly in the area of fraud detection. 
+                    By analyzing large volumes of transaction data in real time, AI systems can identify suspicious patterns and flag potential fraudulent activity. 
+                    These systems use machine learning algorithms to recognize anomalies, such as unusual spending behaviors or unauthorized transactions. 
+                    As a result, AI can help financial institutions respond quickly to fraudulent actions, minimizing losses and enhancing security. 
+                    Companies like Mastercard and Visa are utilizing AI-driven tools to monitor transactions and prevent fraud. 
+                    The ability of AI to learn from past data and adapt to new threats makes it an essential tool in safeguarding financial systems.
+                    </p>
+                    <p class="sources">
+                        Sources:<br>
+                        <a href="https://www.mastercard.com" target="_blank">"Mastercard: AI and Fraud Prevention." Mastercard.</a><br>
+                        <a href="https://www.visa.com" target="_blank">"Visa's AI-Powered Fraud Detection." Visa.</a>
+                    </p>
+                </div>
+
+                <h3>5. Entertainment - AI in Content Recommendations</h3>
+                <div>
+                    <p>AI plays a key role in the entertainment industry, particularly through personalized content recommendations on platforms like Netflix and Spotify. 
+                    By analyzing user preferences, viewing history, and behavior, AI algorithms can suggest movies, TV shows, and music that align with an individual's tastes. 
+                    These recommendation systems learn and adapt over time, continuously improving their suggestions. 
+                    For example, Netflix's AI-driven algorithm uses data such as watching patterns, ratings, and search history to provide tailored recommendations to its users. 
+                    Similarly, Spotify's AI analyzes listening habits to curate personalized playlists and music suggestions. 
+                    This personalization enhances user experience and keeps audiences engaged with the platform.
+                    </p>
+                    <p class="sources">
+                        Sources:<br>
+                        <a href="https://www.netflix.com" target="_blank">"Netflix Recommendation System." Netflix.</a><br>
+                        <a href="https://www.spotify.com" target="_blank">"Spotify Personalization and Recommendations." Spotify.</a>
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
     
@@ -115,6 +119,9 @@ This personalization enhances user experience and keeps audiences engaged with t
         <p>CSCI 1101 Final Project</p>
     </footer>
     <button id="scrollToTopBtn" onclick="scrollToTop()"> Back to Top </button>
+
+    <!-- Include your custom JS script for accordion and other functionalities -->
     <script src="js/scripts.js"></script>
+
 </body>
 </html>
