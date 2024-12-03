@@ -69,9 +69,9 @@ main {
 main .center-image {
     display: block;
     margin: 0 auto 20px auto; /* Centers the image horizontally */
-    max-width: 100%; /* Scales the image for responsiveness */
-    height: auto;
-    border-radius: 10px; /* Optional: adds rounded corners */
+    max-width: 100%; /* scales the image */
+    height: auto; /* scales height based on the content surrounding */
+    border-radius: 10px; /* adds rounded corners */
 }
 
 main h2 {
